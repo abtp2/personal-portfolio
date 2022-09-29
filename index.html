@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+				<link rel="stylesheet" href="style.css">
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/abtp2/gw@main/roller.css">
+				<link rel="stylesheet" href="aos.css">
+				<title>Ashutosh Pandey</title>
+</head>
+<body class="">
+<!-- loader div -->				
+<div id="loader" class="none">
+	<div id="load">
+		<span id="l-1"></span>
+		<span id="l-2"></span>
+		<span id="l-3"></span>
+	</div>			
+</div>
+
+
+
+<!-- first section -->				
+<section id="first">
+ <img src="moon.png" id="moon">
+ <img src="building.png" id="first-bottom">
+
+<img src="meteor.png" class="meteor" id="m-1">
+<img src="meteor.png" class="meteor" id="m-2">
+<img src="meteor.png" class="meteor" id="m-3">
+<img src="meteor.png" class="meteor" id="m-4">
+<img src="meteor.png" class="meteor" id="m-5">
+<img src="meteor.png" class="meteor" id="m-6">
+</section>					
+
+
+
+<section id="second">
+<div id="col1" data-aos="zoom-out" data-aos-duration="1000" class="shadow-4 shadow-gray-1000">
+	 <div>
+	 <h1>Hi!</h1>
+	 </div>
+	
+	 <div>
+	 <h2 id="but">I am Ashutosh</h2>
+	 <p>Front-end developer / Javascript expert</p>
+	 <div id="but-out">
+		  Contact me					
+			<div id="but-in"></div>
+	 </div>
+	 </div>
+</div>
+
+
+
+<div class="sec-drop" id="sec-drop1"></div>
+<div class="sec-drop" id="sec-drop2"></div>
+<div class="sec-drop" id="sec-drop3"></div>
+<div class="sec-drop" id="sec-drop4"></div>
+<div class="sec-drop" id="sec-drop5"></div>
+<div class="sec-drop" id="sec-drop6"></div>
+<div class="sec-drop" id="sec-drop7"></div>
+<div class="sec-drop" id="sec-drop8"></div>
+<div class="sec-drop" id="sec-drop9"></div>
+<div class="sec-drop" id="sec-drop10"></div>
+<div class="sec-drop" id="sec-drop11"></div>
+<div class="sec-drop" id="sec-drop12"></div>
+</section>
+
+
+
+<!-- third section -->
+<section id="third">
+
+<div id="third-box" class="shadow-5 shadow-gray-700" data-aos="zoom-out" data-aos-duration="1000">
+	<h1>ME, <span id="typing-text"></span></h1>
+	<i class="rc-icon" id="speak">volume_up</i>
+	<p class="spoke-text">
+	Hi! I am Ashutosh. I speak code and My Blood Group is <span>Javascript</span>. I fell in love with it when I first designed mine own coded website. I have worked on multiple JS Projects and Web projects.
+	I have a Research Project on A.I. assistant. It's like Jarvis from the Iron Man. My biggest problems in the project now are Natural Language and my system. You will be shocked if i say that i am coding this project on my smartphone.
+	Actually, i am making this type of A.I. for to cheat in examination(Seriously not), but i am making this only for fun and to control my device with my custom commands.
+	
+<br><br>
+Now, let's talk about my school. Yes, i am a school student in class 11th. I am good in studies (Just kidding) and i love to be at home and do some work on my mobile phone. My future would be a software engineer.
+Thank You For Giving Your Precious Time To Read This. 
+<br>
+Have a nice day!
+	</p>
+</div>
+</section>
+
+
+
+
+
+
+<!-- fourth section -->
+<section id="fourth">
+<div id="fourth-row" data-aos="zoom-out" data-aos-duration="1000">
+	<div id="fourth-col1">
+	 <h1>MY PORTFOLIO</h1>
+	  <p>A small gallery of recent things chosen by me. Interested to see some more? 
+   <br>Visit <a href="">my work</a> page.</p>
+	</div>
+  <span class="Sphere"></span>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+<script src="aos.js"></script>
+<script src="type.js"></script>
+<script>
+AOS.init();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+ <script>
+        const Texts = [
+            'HTML', 'CSS', 'JAVASCRIPT',
+            'BOOTSTRAP', 'TAILWIND' , 'ROLLERCSS',
+            'PYTHON', 'SASS', 'GITHUB' , 'GETWEBCSS',
+            'MATERIAL UI', 'JQUERY'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 150,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'fast',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 135,
+								keep: false
+            
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#00c4c4';
+        document.querySelector('.Sphere').style.color = color;        
+    </script>
+    
+<script>
+new TypeIt("#typing-text", { 
+strings: "MYSELF AND I", 
+speed: 300, 
+loop: true,
+})
+.pause(2000)
+.go();
+</script>
+
+<script>
+const utterance = new
+SpeechSynthesisUtterance();															const texts = document.querySelector(".spoke-text").innerText;
+const nut = document.getElementById("speak");
+utterance.rate = 0.9;
+utterance.volume = 1;
+utterance.pitch = 0.3;
+utterance.lang = "hi-IN"; 
+utterance.text = texts;
+
+nut.onclick = function(){
+window.speechSynthesis.speak(utterance);				
+}
+</script>
+</body>
+</html>
