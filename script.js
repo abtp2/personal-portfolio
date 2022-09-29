@@ -1,7 +1,5 @@
 window.onscroll = () =>{
    const value = window.scrollY / 8;
-   const het = document.body.offsetHeight;
-   const nav = document.getElementsByClassName("side-nav")[0];
  document.getElementById("moon").style.bottom = `${value}%`;
  document.getElementById("moon").style.marginLeft = `${value}%`;   
 };

@@ -8,9 +8,9 @@
 				<link rel="stylesheet" href="aos.css">
 				<title>Ashutosh Pandey</title>
 </head>
-<body class="">
+<body class="display">
 <!-- loader div -->				
-<div id="loader" class="none">
+<div id="loader" class="">
 	<div id="load">
 		<span id="l-1"></span>
 		<span id="l-2"></span>
@@ -74,7 +74,7 @@
 
 <div id="third-box" class="shadow-5 shadow-gray-700" data-aos="zoom-out" data-aos-duration="1000">
 	<h1>ME, <span id="typing-text"></span></h1>
-	<i class="rc-icon" id="speak">volume_up</i>
+	<i class="rc-icon select-none" id="speak">volume_up</i>
 	<p class="spoke-text">
 	Hi! I am Ashutosh. I speak code and My Blood Group is <span>Javascript</span>. I fell in love with it when I first designed mine own coded website. I have worked on multiple JS Projects and Web projects.
 	I have a Research Project on A.I. assistant. It's like Jarvis from the Iron Man. My biggest problems in the project now are Natural Language and my system. You will be shocked if i say that i am coding this project on my smartphone.
@@ -167,7 +167,7 @@ loop: true,
 const utterance = new
 SpeechSynthesisUtterance();															const texts = document.querySelector(".spoke-text").innerText;
 const nut = document.getElementById("speak");
-utterance.rate = 0.9;
+utterance.rate = 0.8;
 utterance.volume = 1;
 utterance.pitch = 0.3;
 utterance.lang = "hi-IN"; 
