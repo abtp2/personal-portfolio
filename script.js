@@ -12,6 +12,10 @@ document.body.classList.remove("display");
 },5000);
 
 
+document.getElementById("top").onclick = function(){
+window.scrollTo(0, 0); 		
+}
+
 
 
 setInterval(function ashutosh(){
