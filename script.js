@@ -12,9 +12,24 @@ document.body.classList.remove("display");
 },5000);
 
 
+
 document.getElementById("top").onclick = function(){
 window.scrollTo(0, 0); 		
 }
+ 
+
+				
+
+window.onload = function(){
+var body = document.body, 
+    html = document.documentElement; 
+var het = Math.min( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ); 
+
+setInterval(function heet(){
+document.getElementById("sixth").style.height = het + "px";						
+},500);
+}				 
+
 
 
 
@@ -113,7 +128,7 @@ document.getElementById("sec-drop12").style.top = t + "%";
 
 
 
-
+   
 
 
 

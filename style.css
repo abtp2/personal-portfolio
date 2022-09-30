@@ -11,7 +11,10 @@ font-family: Arial;
 overflow-x: hidden;
 }
 .display > *:not(#loader) { 
-display: none;
+opacity: 0;
+}
+.display{
+overflow-y: hidden !important;
 }
 .none{
 display: none;
@@ -550,18 +553,16 @@ font-size: 22px;
 
 /* sixth section */
 #sixth{
-height: 100vh;
 background: #000;
-position: sticky;
-top: 0;
+position: relative;
+display: flex; 
+align-items: center;
+justify-content: center;
+height: 100vh;
 }
 #sixth-box{
 width: 90%;
 background: #101010;
-position: absolute;
-transform: translate(-50%,-50%);
-top: 50%;
-left: 50%;
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -574,7 +575,7 @@ padding: 0;
 }
 #sixth-box h1{
 color: #00c4c4;
-font-size: 30px;
+font-size: 26px;
 line-height: 1.3;
 align-self: flex-start;
 }
@@ -645,7 +646,6 @@ margin: 1rem 0 0 0;
 
 
 
-
 @media(min-width:992px){
 #sixth-box{
 width: 70%;
@@ -680,12 +680,11 @@ height: 100vh;
 background: #00c4c4;
 position: sticky;
 top: 0;
+display: flex; 
+align-items: center;
+justify-content: center;
 }
 #seventh-box{
-position: absolute;
-transform: translate(-50%,-50%);
-left: 50%;
-top: 50%;
 text-align: center;
 width: 90%;
 display: flex; 

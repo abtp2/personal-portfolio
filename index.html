@@ -155,7 +155,7 @@ Have a nice day!
 
 <!-- sixth section -->
 <section id="sixth">
-<div id="sixth-box" class="shadow-3 shadow-gray-900" data-aos="zoom-out" data-aos-duration="1000">
+<div id="sixth-box" class="shadow-3 shadow-gray-900">
 			<div id="form-div">
 	  	<h1>CONTACT ME</h1>
 	  	<p>If you have other question, don’t hesitate to use the form.</p>
@@ -198,13 +198,10 @@ Have a nice day!
 
 
 <div id="top">
-	<span class="rc-icon">arrow_upward</span>
+	<span class="rc-icon select-none">arrow_upward</span>
 </div>
 </section>
-
-
-
-
+ 
 
 
 
@@ -217,40 +214,11 @@ Have a nice day!
 <script src="script.js"></script>
 <script src="aos.js"></script>
 <script src="type.js"></script>
+<script src="new.js"></script>
 <script>
 AOS.init();
 </script>
 <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
- <script>
-        const Texts = [
-            'HTML', 'CSS', 'JAVASCRIPT',
-            'BOOTSTRAP', 'TAILWIND' , 'ROLLERCSS',
-            'PYTHON', 'SASS', 'GITHUB' , 'GETWEBCSS',
-            'MATERIAL UI', 'JQUERY'
-        ];
-
-        var tagCloud = TagCloud('.Sphere', Texts, {
-
-            // Sphere radius in px
-            radius: 150,
-
-            // animation speed
-            // slow, normal, fast
-            maxSpeed: 'fast',
-            initSpeed: 'fast',
-
-            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
-            direction: 135,
-								keep: false
-            
-
-        });
-
-        // Giving color to each text in sphere
-        var color = '#00c4c4';
-        document.querySelector('.Sphere').style.color = color;        
-    </script>
-    
 <script>
 new TypeIt("#typing-text", { 
 strings: "MYSELF AND I", 
@@ -258,22 +226,28 @@ speed: 300,
 loop: true,
 })
 .pause(2000)
-.go();
+.go();			
 </script>
-
 <script>
-const utterance = new
-SpeechSynthesisUtterance();															const texts = document.querySelector(".spoke-text").innerText;
-const nut = document.getElementById("speak");
-utterance.rate = 0.8;
-utterance.volume = 1;
-utterance.pitch = 0.3;
-utterance.lang = "hi-IN"; 
-utterance.text = texts;
+const Texts = ['HTML', 'CSS', 'JAVASCRIPT', 'BOOTSTRAP', 'TAILWIND' , 'ROLLERCSS','PYTHON', 'SASS', 'GITHUB' , 'GETWEBCSS','MATERIAL UI', 'JQUERY'];
 
-nut.onclick = function(){
-window.speechSynthesis.speak(utterance);				
-}
+var tagCloud = TagCloud('.Sphere', Texts, {
+// Sphere radius in px
+radius: 150,
+
+// animation speed
+// slow, normal, fast
+maxSpeed: 'fast',
+initSpeed: 'fast',
+
+// Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+direction: 135,
+keep: false
+});
+
+// Giving color to each text in sphere
+var color = '#00c4c4';
+        document.querySelector('.Sphere').style.color = color;        				
 </script>
 </body>
 </html>
