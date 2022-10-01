@@ -89,6 +89,7 @@ background: url("firstbg.jpg");
 background-size: cover;
 background-attachment: fixed;
 position: relative;
+overflow: hidden;
 }
 .meteor{
 animation-name: meteor;
