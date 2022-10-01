@@ -133,7 +133,8 @@ document.getElementById("submit").click();
 }
 
 
-setTimeout(function my(){
-document.getElementById("form").reset();
+function my(){
+setTimeout(function tosub(){
+document.getElementById("form").reset();				
 },1000);
-
+}

@@ -1,4 +1,4 @@
-const utterance = new
+/* const utterance = new
 SpeechSynthesisUtterance();															const texts = document.querySelector(".spoke-text").innerText;
 const nut = document.getElementById("speak");
 utterance.rate = 0.8;
@@ -9,4 +9,23 @@ utterance.text = texts;
 
 nut.onclick = function(){
 window.speechSynthesis.speak(utterance);				
+}
+ */
+
+
+document.getElementById("speak").onclick = function(){
+var x = document.getElementById("speak");
+var a = document.getElementById("audio");
+
+if(x.classList.contains("on")){
+x.classList.remove("on");
+x.classList.add("off");	
+
+a.pause();
+}else {
+x.classList.remove("off");
+x.classList.add("on");		
+
+a.play();	
+}
 }

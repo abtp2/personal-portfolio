@@ -333,8 +333,16 @@ position: absolute;
 top: 1rem;
 right: 1rem;
 }
-#speak:hover{
+.on{
 color: #00c4c4;
+}
+.off{
+color: #000;
+}
+#audio{
+position: absolute;
+visibility: hidden;
+z-index: -9999999;
 }
 
 #third-box h1{
@@ -650,7 +658,7 @@ margin: 1rem 0 0 0;
 @media(min-width:992px){
 #sixth-box{
 width: 70%;
-justify-content: space-between;
+display: flex;
 flex-direction: row-reverse;
 }				
 #form-div{
