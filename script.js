@@ -5,12 +5,13 @@ window.onscroll = () =>{
 };
 
 
+/* 
 setTimeout(function loda(){
 const x = document.getElementById("loader");
 x.style.bottom ="100%";
 document.body.classList.remove("display");
 },5000);
-
+ */
 
 
 document.getElementById("top").onclick = function(){
@@ -24,6 +25,9 @@ window.onload = function(){
 var body = document.body, 
     html = document.documentElement; 
 var het = Math.min( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ); 
+const x = document.getElementById("loader");
+x.style.bottom ="100%";
+document.body.classList.remove("display");
 
 setInterval(function heet(){
 document.getElementById("sixth").style.height = het + "px";						
@@ -124,13 +128,12 @@ document.getElementById("sec-drop12").style.top = t + "%";
 
 
 
+document.getElementsByClassName("form-but")[0].onclick = function(){
+document.getElementById("submit").click();			
+}
 
 
-
-
-   
-
-
-
-
+setTimeout(function my(){
+document.getElementById("form").reset();
+},1000);
 

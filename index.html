@@ -47,7 +47,7 @@
 	 <div>
 	 <h2 id="but">I am Ashutosh</h2>
 	 <p>Front-end developer / Javascript expert</p>
-	 <div id="but-out">
+	 <div id="but-out" onclick="window.location ='#sixth'">
 		  Contact me					
 			<div id="but-in"></div>
 	 </div>
@@ -159,16 +159,17 @@ Have a nice day!
 			<div id="form-div">
 	  	<h1>CONTACT ME</h1>
 	  	<p>If you have other question, don’t hesitate to use the form.</p>
-	  	<form id="form">
-	  		  <input type="text" placeholder="Name">
-	  		  <input type="email" placeholder="Email">
-	  		  <textarea placeholder="Message"></textarea>
+	  	<form id="form" action="https://formspree.io/f/xlezdzrn" method="post" onsubmit="my()">
+	  		  <input type="text" class="name" placeholder="Name" required>
+	  		  <input type="email" class="email" placeholder="Email" name="_replyto" required>
+	  		  <textarea class="message" placeholder="Message" name="message" required></textarea>
+	  		  <input type="submit" id="submit">	  		  
 	  		   <div id="but-out" class="form-but">
 		      Send message!
 			    <div id="but-in"></div>
 	       </div>
 	    </form>
-	    </div>
+
 	  
 	  
 	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.829123281785!2d80.58335939999999!3d28.4244125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab8c8604516fa542!2s7MW2CHFM%2BQ89!5e0!3m2!1sen!2sin!4v1664537792309!5m2!1sen!2sin" id="map"></iframe>
@@ -189,7 +190,7 @@ Have a nice day!
 	 <div>
 	 <h2>Thank you for visiting my website</h2>
 	 <p>Come again....bye!!</p>
-	 <div id="but-out2">
+	 <div id="but-out2" onclick="window.location ='#sixth'">
 		  Contact me					
 			<div id="but-in2"></div>
 	 </div>
@@ -202,7 +203,6 @@ Have a nice day!
 </div>
 </section>
  
-
 
 
 
