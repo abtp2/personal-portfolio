@@ -26,12 +26,12 @@ var body = document.body,
     html = document.documentElement; 
 var het = Math.min( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight ); 
 const x = document.getElementById("loader");
-x.style.bottom ="100%";
+x.style.bottom ="120%";
 document.body.classList.remove("display");
 
 setInterval(function heet(){
 document.getElementById("sixth").style.height = het + "px";						
-},500);
+},200);
 }				 
 
 
